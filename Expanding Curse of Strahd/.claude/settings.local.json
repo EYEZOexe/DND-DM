@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sed:*)",
+      "Bash(python3:*)",
+      "Bash(where python:*)",
+      "Bash(/c/Users/NAT20/AppData/Local/Programs/Python/Python310/python:*)"
+    ]
+  }
+}
