@@ -1,5 +1,0 @@
-*.pdf filter=lfs diff=lfs merge=lfs -text
-*.docx filter=lfs diff=lfs merge=lfs -text
-*.lorekit filter=lfs diff=lfs merge=lfs -text
-*.lore filter=lfs diff=lfs merge=lfs -text
-*.tome filter=lfs diff=lfs merge=lfs -text
