@@ -14,7 +14,7 @@
 		<archetype>
 		</archetype>
 		<background>Acolyte</background>
-		<level>4</level>
+		<level>5</level>
 		<portrait>
 			<companion>
 			</companion>
@@ -28,10 +28,10 @@
 			<name>Thessyr</name>
 			<gender>Male</gender>
 			<player-name>Player One</player-name>
-			<experience>2700</experience>
+			<experience>6500</experience>
 			<attacks>
 				<description><![CDATA[]]></description>
-				<attack identifier="7e131b4b-f2af-4ceb-b30c-e384af05f9cb" name="Sickle" range="5 ft" attack="+2 vs AC" damage="1d4+0 slashing" displayed="true" ability="Strength">
+				<attack identifier="7e131b4b-f2af-4ceb-b30c-e384af05f9cb" name="Sickle" range="5 ft" attack="+3 vs AC" damage="1d4+0 slashing" displayed="true" ability="Strength">
 					<description><![CDATA[Light, Nick]]></description>
 				</attack>
 			</attacks>
@@ -100,7 +100,7 @@
 			<wisdom>13</wisdom>
 			<charisma>15</charisma>
 		</abilities>
-		<elements level-count="4" registered-count="39">
+		<elements level-count="5" registered-count="44">
 			<element type="Option" name="Feats" id="ID_INTERNAL_OPTION_ALLOW_FEATS" />
 			<element type="Option" name="Multiclassing" id="ID_INTERNAL_OPTION_ALLOW_MULTICLASSING">
 				<element type="Grants" name="Multiclass Spellcasting" id="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING" />
@@ -115,7 +115,11 @@
 					<element type="Vision" name="Darkvision" id="ID_VISION_DARKVISION" />
 					<element type="Racial Trait" name="Elven Lineage" id="ID_WOTC_PHB24_RACIAL_TRAIT_ELF_ELVEN_LINEAGE">
 						<element type="Racial Trait" name="Elven Lineage" requiredLevel="1" checksum="15d318e4" registered="ID_WOTC_PHB24_RACIAL_TRAIT_ELF_ELVEN_LINEAGE_DROW">
-							<element type="Racial Trait" name="Spellcasting Ability (Elven Lineage)" requiredLevel="1" checksum="a9d27ffa" registered="" />
+							<element type="Racial Trait" name="Spellcasting Ability (Elven Lineage)" requiredLevel="1" checksum="a9d27ffa" registered="ID_WOTC_PHB24_RACIAL_TRAIT_ELF_ELVEN_LINEAGE_DROW_CHARISMA">
+								<element type="Spell" name="Dancing Lights" id="ID_WOTC_PHB24_SPELL_DANCING_LIGHTS" />
+								<element type="Spell" name="Faerie Fire" id="ID_WOTC_PHB24_SPELL_FAERIE_FIRE" />
+								<element type="Spell" name="Darkness" id="ID_WOTC_PHB24_SPELL_DARKNESS" />
+							</element>
 							<element type="Grants" name="Race Dark Elf" id="ID_INTERNAL_GRANT_RACE_DARK_ELF" />
 							<element type="Vision" name="Darkvision" id="ID_VISION_DARKVISION" />
 						</element>
@@ -164,6 +168,12 @@
 						</element>
 						<element type="Class Feature" name="Eldritch Invocation (Warlock 2)" requiredLevel="2" number="1" checksum="4f8f48ee" registered="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST" />
 						<element type="Class Feature" name="Eldritch Invocation (Warlock 2)" requiredLevel="2" number="2" checksum="d6861954" registered="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_DEVILS_SIGHT" />
+						<element type="Class Feature" name="Eldritch Invocation (Warlock 5)" requiredLevel="5" number="1" checksum="205ca262" registered="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_ONE_WITH_SHADOWS">
+							<element type="Spell" name="Invisibility" id="ID_WOTC_PHB24_SPELL_INVISIBILITY" />
+						</element>
+						<element type="Class Feature" name="Eldritch Invocation (Warlock 5)" requiredLevel="5" number="2" checksum="b955f3d8" registered="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_MASTER_OF_MYRIAD_FORMS">
+							<element type="Spell" name="Alter Self" id="ID_WOTC_PHB24_SPELL_ALTER_SELF" />
+						</element>
 					</element>
 					<element type="Class Feature" name="Level 1: Pact Magic" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_PACT_MAGIC">
 						<element type="Spell" name="Cantrip (Warlock)" requiredLevel="1" number="1" checksum="b5b97969" registered="ID_WOTC_PHB24_SPELL_MAGE_HAND" />
@@ -174,8 +184,10 @@
 						<element type="Spell" name="Spellcasting (Warlock)" requiredLevel="2" checksum="726fe383" registered="ID_WOTC_PHB24_SPELL_CHARM_PERSON" />
 						<element type="Spell" name="Spellcasting (Warlock)" requiredLevel="3" checksum="5847dbe1" registered="ID_WOTC_PHB24_SPELL_DARKNESS" />
 						<element type="Spell" name="Spellcasting (Warlock)" requiredLevel="4" checksum="8e9f72cf" registered="ID_WOTC_PHB24_SPELL_CLOUD_OF_DAGGERS" />
+						<element type="Spell" name="Spellcasting (Warlock)" requiredLevel="5" checksum="a4b74aad" registered="ID_WOTC_PHB24_SPELL_COUNTERSPELL" />
 						<element type="Grants" name="Pact Magic Feature Grants" id="ID_INTERNAL_GRANTS_PACT_MAGIC_FEATURE" />
 					</element>
+					<element type="Grants" name="Multiclassing Prerequisite" id="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE" />
 					<element type="Class Feature" name="Level 2: Magical Cunning" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_MAGICAL_CUNNING" />
 					<element type="Class Feature" name="Level 3: Warlock Subclass" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_WARLOCK_SUBCLASS">
 						<element type="Archetype" name="Warlock Subclass" requiredLevel="1" checksum="cab40ee0" registered="ID_WOTC_PHB24_ARCHETYPE_WARLOCK_GREAT_OLD_ONE_PATRON">
@@ -185,6 +197,8 @@
 								<element type="Spell" name="Tasha’s Hideous Laughter" id="ID_WOTC_PHB24_SPELL_TASHAS_HIDEOUS_LAUGHTER" />
 								<element type="Spell" name="Detect Thoughts" id="ID_WOTC_PHB24_SPELL_DETECT_THOUGHTS" />
 								<element type="Spell" name="Phantasmal Force" id="ID_WOTC_PHB24_SPELL_PHANTASMAL_FORCE" />
+								<element type="Spell" name="Clairvoyance" id="ID_WOTC_PHB24_SPELL_CLAIRVOYANCE" />
+								<element type="Spell" name="Hunger of Hadar" id="ID_WOTC_PHB24_SPELL_HUNGER_OF_HADAR" />
 							</element>
 							<element type="Archetype Feature" name="Level 3: Psychic Spells" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_WARLOCK_GREAT_OLD_ONE_PATRON_PSYCHIC_SPELLS" />
 						</element>
@@ -195,7 +209,6 @@
 							<element type="Ability Score Improvement" name="Ability Score Improvement Feat" requiredLevel="1" number="2" checksum="b931b51c" registered="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CONSTITUTION" />
 						</element>
 					</element>
-					<element type="Grants" name="Multiclassing Prerequisite" id="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE" />
 				</element>
 				<element type="Background" name="Background" requiredLevel="1" checksum="6a621392" registered="ID_WOTC_PHB24_BACKGROUND_ACOLYTE">
 					<element type="Ability Score Improvement" name="Intelligence, Wisdom, Charisma" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_INT_WIS_CHA">
@@ -228,6 +241,7 @@
 			<element type="Level" name="2" id="ID_LEVEL_2" />
 			<element type="Level" name="3" id="ID_LEVEL_3" />
 			<element type="Level" name="4" id="ID_LEVEL_4" />
+			<element type="Level" name="5" id="ID_LEVEL_5" />
 		</elements>
 		<defenses>
 			<conditional>
@@ -351,7 +365,10 @@
 				</details>
 			</item>
 		</equipment>
-		<sum element-count="101">
+		<sum element-count="113">
+			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_FEATS" />
+			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_MULTICLASSING" />
+			<element type="Grants" id="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING" />
 			<element type="Level" id="ID_LEVEL_1" />
 			<element type="Grants" id="ID_INTERNAL_GRANTS_CHARACTER_BASE" />
 			<element type="Grants" id="ID_INTERNAL_GRANTS_ABILITY_SCORE_MAXIMUM_OVER_20" />
@@ -359,13 +376,6 @@
 			<element type="Grants" id="ID_INTERNAL_GRANTS_ARMOR_CLASS_BASE" />
 			<element type="Grants" id="ID_INTERNAL_GRANTS_ARMOR_CLASS_DEXTERITY_MODIFIER" />
 			<element type="Grants" id="ID_INTERNAL_GRANTS_HP_CONSTITUTION_MODIFIER" />
-			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_FEATS" />
-			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_MULTICLASSING" />
-			<element type="Grants" id="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING" />
-			<element type="Level" id="ID_LEVEL_2" />
-			<element type="Level" id="ID_LEVEL_3" />
-			<element type="Level" id="ID_LEVEL_4" />
-			<element type="Feat" id="ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT" />
 			<element type="Race" id="ID_WOTC_PHB24_RACE_ELF" />
 			<element type="Grants" id="ID_INTERNAL_GRANT_RACE_ELF" />
 			<element type="Size" id="ID_SIZE_MEDIUM" />
@@ -375,9 +385,18 @@
 			<element type="Racial Trait" id="ID_WOTC_PHB24_RACIAL_TRAIT_ELF_FEY_ANCESTRY" />
 			<element type="Racial Trait" id="ID_WOTC_PHB24_RACIAL_TRAIT_ELF_KEEN_SENSES" />
 			<element type="Racial Trait" id="ID_WOTC_PHB24_RACIAL_TRAIT_ELF_TRANCE" />
+			<element type="Language" id="ID_LANGUAGE_ELVISH" />
+			<element type="Language" id="ID_WOTC_PHB24_LANGUAGE_DRACONIC" />
 			<element type="Racial Trait" id="ID_WOTC_PHB24_RACIAL_TRAIT_ELF_ELVEN_LINEAGE_DROW" />
 			<element type="Grants" id="ID_INTERNAL_GRANT_RACE_DARK_ELF" />
 			<element type="Vision" id="ID_VISION_DARKVISION" />
+			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<element type="Spell" id="ID_WOTC_PHB24_SPELL_MAGE_HAND" />
+			<element type="Spell" id="ID_WOTC_PHB24_SPELL_PRESTIDIGITATION" />
+			<element type="Spell" id="ID_WOTC_PHB24_SPELL_ARMS_OF_HADAR" />
+			<element type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_MAGIC" />
 			<element type="Background" id="ID_WOTC_PHB24_BACKGROUND_ACOLYTE" />
 			<element type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_INT_WIS_CHA" />
 			<element type="Feat Feature" id="ID_WOTC_PHB24_FEAT_MAGIC_INITIATE_CLERIC" />
@@ -388,27 +407,28 @@
 			<element type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_INT_WIS_CHA_1" />
 			<element type="Ability Score Improvement" id="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CHARISMA_INCREASE_2" />
 			<element type="Ability Score Improvement" id="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_WISDOM_INCREASE_1" />
-			<element type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CHARISMA" />
-			<element type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CONSTITUTION" />
-			<element type="Language" id="ID_LANGUAGE_ELVISH" />
-			<element type="Language" id="ID_WOTC_PHB24_LANGUAGE_DRACONIC" />
-			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
-			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
-			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
 			<element type="Feat Feature" id="ID_WOTC_PHB24_FEAT_FEATURE_MAGIC_INITIATE_CLERIC_CHARISMA" />
-			<element type="Spell" id="ID_WOTC_PHB24_SPELL_MAGE_HAND" />
-			<element type="Spell" id="ID_WOTC_PHB24_SPELL_PRESTIDIGITATION" />
-			<element type="Spell" id="ID_WOTC_PHB24_SPELL_ELDRITCH_BLAST" />
-			<element type="Spell" id="ID_WOTC_PHB24_SPELL_ARMS_OF_HADAR" />
-			<element type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_MAGIC" />
-			<element type="Spell" id="ID_WOTC_PHB24_SPELL_CHARM_PERSON" />
-			<element type="Spell" id="ID_WOTC_PHB24_SPELL_DARKNESS" />
-			<element type="Spell" id="ID_WOTC_PHB24_SPELL_CLOUD_OF_DAGGERS" />
 			<element type="Spell" id="ID_WOTC_PHB24_SPELL_SPARE_THE_DYING" />
 			<element type="Spell" id="ID_WOTC_PHB24_SPELL_TOLL_THE_DEAD" />
 			<element type="Spell" id="ID_WOTC_PHB24_SPELL_CURE_WOUNDS" />
+			<element type="Level" id="ID_LEVEL_2" />
+			<element type="Spell" id="ID_WOTC_PHB24_SPELL_CHARM_PERSON" />
+			<element type="Level" id="ID_LEVEL_3" />
+			<element type="Spell" id="ID_WOTC_PHB24_SPELL_DARKNESS" />
+			<element type="Level" id="ID_LEVEL_4" />
+			<element type="Spell" id="ID_WOTC_PHB24_SPELL_ELDRITCH_BLAST" />
+			<element type="Spell" id="ID_WOTC_PHB24_SPELL_CLOUD_OF_DAGGERS" />
+			<element type="Feat" id="ID_WOTC_PHB24_FEAT_ABILITY_SCORE_IMPROVEMENT" />
+			<element type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CHARISMA" />
+			<element type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CONSTITUTION" />
 			<element type="Weapon" id="ID_WOTC_PHB24_WEAPON_SICKLE" />
 			<element type="Armor" id="ID_WOTC_PHB24_ARMOR_LIGHT_LEATHER" />
+			<element type="Racial Trait" id="ID_WOTC_PHB24_RACIAL_TRAIT_ELF_ELVEN_LINEAGE_DROW_CHARISMA" />
+			<element type="Spell" id="ID_WOTC_PHB24_SPELL_DANCING_LIGHTS" />
+			<element type="Spell" id="ID_WOTC_PHB24_SPELL_FAERIE_FIRE" />
+			<element type="Spell" id="ID_WOTC_PHB24_SPELL_DARKNESS" />
+			<element type="Level" id="ID_LEVEL_5" />
+			<element type="Spell" id="ID_WOTC_PHB24_SPELL_COUNTERSPELL" />
 			<element type="Class" id="ID_WOTC_PHB24_CLASS_WARLOCK" />
 			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
 			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS" />
@@ -437,12 +457,14 @@
 			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_ELDRITCH_INVOCATIONS" />
 			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_PACT_MAGIC" />
 			<element type="Grants" id="ID_INTERNAL_GRANTS_PACT_MAGIC_FEATURE" />
+			<element type="Grants" id="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE" />
 			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_MAGICAL_CUNNING" />
 			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_WARLOCK_SUBCLASS" />
 			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_ABILITY_SCORE_IMPROVEMENT" />
-			<element type="Grants" id="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE" />
 			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_CHAIN" />
 			<element type="Spell" id="ID_WOTC_PHB24_SPELL_FIND_FAMILIAR" />
+			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST" />
+			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_DEVILS_SIGHT" />
 			<element type="Archetype" id="ID_WOTC_PHB24_ARCHETYPE_WARLOCK_GREAT_OLD_ONE_PATRON" />
 			<element type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_WARLOCK_GREAT_OLD_ONE_PATRON_AWAKENED_MIND" />
 			<element type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_WARLOCK_GREAT_OLD_ONE_PATRON_GREAT_OLD_ONE_SPELLS" />
@@ -450,13 +472,17 @@
 			<element type="Spell" id="ID_WOTC_PHB24_SPELL_TASHAS_HIDEOUS_LAUGHTER" />
 			<element type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_THOUGHTS" />
 			<element type="Spell" id="ID_WOTC_PHB24_SPELL_PHANTASMAL_FORCE" />
+			<element type="Spell" id="ID_WOTC_PHB24_SPELL_CLAIRVOYANCE" />
+			<element type="Spell" id="ID_WOTC_PHB24_SPELL_HUNGER_OF_HADAR" />
 			<element type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_WARLOCK_GREAT_OLD_ONE_PATRON_PSYCHIC_SPELLS" />
-			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST" />
-			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_DEVILS_SIGHT" />
+			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_ONE_WITH_SHADOWS" />
+			<element type="Spell" id="ID_WOTC_PHB24_SPELL_INVISIBILITY" />
+			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_MASTER_OF_MYRIAD_FORMS" />
+			<element type="Spell" id="ID_WOTC_PHB24_SPELL_ALTER_SELF" />
 		</sum>
 		<magic>
-			<spellcasting name="Warlock" ability="Charisma" attack="6" dc="14" source="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_PACT_MAGIC">
-				<slots s1="0" s2="2" s3="0" s4="0" s5="0" s6="0" s7="0" s8="0" s9="0" />
+			<spellcasting name="Warlock" ability="Charisma" attack="7" dc="15" source="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_PACT_MAGIC">
+				<slots s1="0" s2="0" s3="2" s4="0" s5="0" s6="0" s7="0" s8="0" s9="0" />
 				<cantrips>
 					<spell name="Eldritch Blast" level="0" id="ID_WOTC_PHB24_SPELL_ELDRITCH_BLAST" />
 					<spell name="Mage Hand" level="0" id="ID_WOTC_PHB24_SPELL_MAGE_HAND" />
@@ -470,15 +496,23 @@
 					<spell name="Tasha’s Hideous Laughter" level="1" id="ID_WOTC_PHB24_SPELL_TASHAS_HIDEOUS_LAUGHTER" known="true" />
 					<spell name="Cloud of Daggers" level="2" id="ID_WOTC_PHB24_SPELL_CLOUD_OF_DAGGERS" known="true" />
 					<spell name="Darkness" level="2" id="ID_WOTC_PHB24_SPELL_DARKNESS" known="true" />
+					<spell name="Darkness" level="2" id="ID_WOTC_PHB24_SPELL_DARKNESS" known="true" />
 					<spell name="Detect Thoughts" level="2" id="ID_WOTC_PHB24_SPELL_DETECT_THOUGHTS" known="true" />
 					<spell name="Phantasmal Force" level="2" id="ID_WOTC_PHB24_SPELL_PHANTASMAL_FORCE" known="true" />
+					<spell name="Clairvoyance" level="3" id="ID_WOTC_PHB24_SPELL_CLAIRVOYANCE" known="true" />
+					<spell name="Counterspell" level="3" id="ID_WOTC_PHB24_SPELL_COUNTERSPELL" known="true" />
+					<spell name="Hunger of Hadar" level="3" id="ID_WOTC_PHB24_SPELL_HUNGER_OF_HADAR" known="true" />
 				</spells>
 			</spellcasting>
 			<additional>
 				<spell name="Spare the Dying" level="0" id="ID_WOTC_PHB24_SPELL_SPARE_THE_DYING" source="Cleric" />
 				<spell name="Toll the Dead" level="0" id="ID_WOTC_PHB24_SPELL_TOLL_THE_DEAD" source="Cleric" />
 				<spell name="Cure Wounds" level="1" id="ID_WOTC_PHB24_SPELL_CURE_WOUNDS" source="Cleric" />
+				<spell name="Dancing Lights" level="0" id="ID_WOTC_PHB24_SPELL_DANCING_LIGHTS" source="Charisma" />
+				<spell name="Faerie Fire" level="1" id="ID_WOTC_PHB24_SPELL_FAERIE_FIRE" source="Charisma" />
 				<spell name="Find Familiar" level="1" id="ID_WOTC_PHB24_SPELL_FIND_FAMILIAR" source="Pact of the Chain" />
+				<spell name="Invisibility" level="2" id="ID_WOTC_PHB24_SPELL_INVISIBILITY" source="One with Shadows" />
+				<spell name="Alter Self" level="2" id="ID_WOTC_PHB24_SPELL_ALTER_SELF" source="Master of Myriad Forms" />
 			</additional>
 		</magic>
 	</build>

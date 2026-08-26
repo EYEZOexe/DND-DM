@@ -10,11 +10,11 @@
 	<display-properties favorite="false">
 		<name>Nevar</name>
 		<race>Human</race>
-		<class>Rogue</class>
+		<class>Rogue (4) / Cleric (1)</class>
 		<archetype>
 		</archetype>
 		<background>Criminal</background>
-		<level>4</level>
+		<level>5</level>
 		<portrait>
 			<companion>
 			</companion>
@@ -28,16 +28,16 @@
 			<name>Nevar</name>
 			<gender>Male</gender>
 			<player-name>Player One</player-name>
-			<experience>2700</experience>
+			<experience>6500</experience>
 			<attacks>
 				<description><![CDATA[]]></description>
-				<attack identifier="ee7b2959-26ee-4ea6-b908-f92ecde03757" name="Shortsword" range="5 ft" attack="+6 vs AC" damage="1d6+4 piercing" displayed="true" ability="Dexterity">
+				<attack identifier="ee7b2959-26ee-4ea6-b908-f92ecde03757" name="Shortsword" range="5 ft" attack="+7 vs AC" damage="1d6+4 piercing" displayed="true" ability="Dexterity">
 					<description><![CDATA[Finesse, Light, Vex]]></description>
 				</attack>
-				<attack identifier="da0e8f9a-ecb9-44c1-b03a-b5d1ae9ee93f" name="Dagger" range="20/60" attack="+6 vs AC" damage="1d4+4 piercing" displayed="true" ability="Dexterity">
+				<attack identifier="da0e8f9a-ecb9-44c1-b03a-b5d1ae9ee93f" name="Dagger" range="20/60" attack="+7 vs AC" damage="1d4+4 piercing" displayed="true" ability="Dexterity">
 					<description><![CDATA[Finesse, Light, Nick, Thrown]]></description>
 				</attack>
-				<attack identifier="fb0ca2df-3b0f-4132-a2d0-569aa4afd3ab" name="Shortbow" range="80/320; Arrow" attack="+6 vs AC" damage="1d6+4 piercing" displayed="true" ability="Dexterity">
+				<attack identifier="fb0ca2df-3b0f-4132-a2d0-569aa4afd3ab" name="Shortbow" range="80/320; Arrow" attack="+7 vs AC" damage="1d6+4 piercing" displayed="true" ability="Dexterity">
 					<description><![CDATA[Ammunition, Two-Handed, Vex]]></description>
 				</attack>
 			</attacks>
@@ -106,7 +106,7 @@
 			<wisdom>14</wisdom>
 			<charisma>10</charisma>
 		</abilities>
-		<elements level-count="4" registered-count="34">
+		<elements level-count="5" registered-count="41">
 			<element type="Option" name="Feats" id="ID_INTERNAL_OPTION_ALLOW_FEATS" />
 			<element type="Option" name="Multiclassing" id="ID_INTERNAL_OPTION_ALLOW_MULTICLASSING">
 				<element type="Grants" name="Multiclass Spellcasting" id="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING" />
@@ -180,6 +180,7 @@
 						<element type="Class Feature" name="Weapon Mastery (Rogue 1)" requiredLevel="1" number="1" checksum="0181c720" registered="ID_WOTC_PHB24_CLASS_FEATURE_MASTERY_PROPERTY_DAGGER_NICK" />
 						<element type="Class Feature" name="Weapon Mastery (Rogue 1)" requiredLevel="1" number="2" checksum="9888969a" registered="ID_WOTC_PHB24_CLASS_FEATURE_MASTERY_PROPERTY_SICKLE_NICK" />
 					</element>
+					<element type="Grants" name="Multiclassing Prerequisite" id="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE" />
 					<element type="Class Feature" name="Level 2: Cunning Action" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_CUNNING_ACTION" />
 					<element type="Class Feature" name="Level 3: Roguish Archetype" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_ROGUE_SUBCLASS">
 						<element type="Archetype" name="Rogue Subclass" requiredLevel="1" checksum="6a3e2a83" registered="ID_WOTC_PHB24_ARCHETYPE_ROGUE_SOULKNIFE">
@@ -203,7 +204,6 @@
 							</element>
 						</element>
 					</element>
-					<element type="Grants" name="Multiclassing Prerequisite" id="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE" />
 				</element>
 				<element type="Background" name="Background" requiredLevel="1" checksum="6a621392" registered="ID_WOTC_PHB24_BACKGROUND_CRIMINAL">
 					<element type="Ability Score Improvement" name="Dexterity, Constitution, Intelligence" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_DEX_CON_INT">
@@ -231,6 +231,40 @@
 			<element type="Level" name="2" id="ID_LEVEL_2" />
 			<element type="Level" name="3" id="ID_LEVEL_3" />
 			<element type="Level" name="4" id="ID_LEVEL_4" />
+			<element type="Level" name="5" id="ID_LEVEL_5" multiclass="true" starting="true" rndhp="7,2,8,5,5,3,2,7,3,8,4,8,3,5,8,8,2,3,3,2" class="ID_WOTC_PHB24_MULTICLASS_CLERIC">
+				<element type="Multiclass" name="Multiclass (Level 5)" requiredLevel="5" checksum="24ace93b" registered="ID_WOTC_PHB24_MULTICLASS_CLERIC">
+					<element type="Proficiency" name="Armor Proficiency (Light Armor)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR">
+						<element type="Proficiency" name="Armor Proficiency (Padded)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_PADDED" />
+						<element type="Proficiency" name="Armor Proficiency (Leather)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LEATHER" />
+						<element type="Proficiency" name="Armor Proficiency (Studded Leather)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_STUDDED_LEATHER" />
+					</element>
+					<element type="Proficiency" name="Armor Proficiency (Medium Armor)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR">
+						<element type="Proficiency" name="Armor Proficiency (Hide)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HIDE" />
+						<element type="Proficiency" name="Armor Proficiency (Chain Shirt)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_CHAIN_SHIRT" />
+						<element type="Proficiency" name="Armor Proficiency (Scale Mail)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SCALE_MAIL" />
+						<element type="Proficiency" name="Armor Proficiency (Breastplate)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_BREASTPLATE" />
+						<element type="Proficiency" name="Armor Proficiency (Half Plate)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HALF_PLATE" />
+						<element type="Proficiency" name="Armor Proficiency (Spiked Armor)" id="ID_SCAG_PROFICIENCY_ARMOR_PROFICIENCY_SPIKED_ARMOR" />
+					</element>
+					<element type="Proficiency" name="Armor Proficiency (Shield)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD" />
+					<element type="Class Feature" name="Level 1: Spellcasting" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SPELLCASTING">
+						<element type="Spell" name="Cantrip (Cleric)" requiredLevel="1" number="1" checksum="29fad3f9" registered="ID_WOTC_PHB24_SPELL_GUIDANCE" />
+						<element type="Spell" name="Cantrip (Cleric)" requiredLevel="1" number="2" checksum="71e47ad1" registered="ID_WOTC_PHB24_SPELL_RESISTANCE" />
+						<element type="Spell" name="Cantrip (Cleric)" requiredLevel="1" number="3" checksum="f0c11ff6" registered="ID_WOTC_PHB24_SPELL_THAUMATURGY" />
+						<element type="Grants" name="Spellcasting Feature Grants" id="ID_INTERNAL_GRANTS_SPELLCASTING_FEATURE" />
+						<element type="Grants" name="Ritual Casting" id="ID_INTERNAL_RITUAL_CASTING" />
+						<element type="Proficiency" name="Spellcasting Focus Group (Holy Symbol)" id="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_HOLY_SYMBOL" />
+						<element type="Grants" name="Multiclass Spellcasting Slots Full" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" />
+					</element>
+					<element type="Class Feature" name="Level 1: Divine Order" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER">
+						<element type="Class Feature" name="Sacred Role (Divine Order)" requiredLevel="1" checksum="6252c3db" registered="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER_THAUMATURGE">
+							<element type="Spell" name="Cantrip (Thaumaturge)" requiredLevel="1" checksum="7821ee67" registered="ID_WOTC_PHB24_SPELL_TOLL_THE_DEAD" />
+						</element>
+					</element>
+					<element type="Grants" name="Multiclass" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				</element>
+				<element type="Grants" name="Multiclassing (Level 5)" id="ID_INTERNAL_MULTICLASS_LEVEL_5" />
+			</element>
 		</elements>
 		<defenses>
 			<conditional>
@@ -312,7 +346,7 @@
 					</notes>
 				</details>
 			</item>
-			<item identifier="00ffcd1a-1add-4872-a59a-66e32d1941c6" name="Leather" id="ID_WOTC_PHB24_ARMOR_LIGHT_LEATHER" sidebar="true">
+			<item identifier="00ffcd1a-1add-4872-a59a-66e32d1941c6" name="Leather" id="ID_WOTC_PHB24_ARMOR_LIGHT_LEATHER">
 				<equipped location="Armor">true</equipped>
 				<details card="true">
 					<name>
@@ -346,7 +380,10 @@
 				</details>
 			</item>
 		</equipment>
-		<sum element-count="98">
+		<sum element-count="125">
+			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_FEATS" />
+			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_MULTICLASSING" />
+			<element type="Grants" id="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING" />
 			<element type="Level" id="ID_LEVEL_1" />
 			<element type="Grants" id="ID_INTERNAL_GRANTS_CHARACTER_BASE" />
 			<element type="Grants" id="ID_INTERNAL_GRANTS_ABILITY_SCORE_MAXIMUM_OVER_20" />
@@ -354,12 +391,6 @@
 			<element type="Grants" id="ID_INTERNAL_GRANTS_ARMOR_CLASS_BASE" />
 			<element type="Grants" id="ID_INTERNAL_GRANTS_ARMOR_CLASS_DEXTERITY_MODIFIER" />
 			<element type="Grants" id="ID_INTERNAL_GRANTS_HP_CONSTITUTION_MODIFIER" />
-			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_FEATS" />
-			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_MULTICLASSING" />
-			<element type="Grants" id="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING" />
-			<element type="Level" id="ID_LEVEL_2" />
-			<element type="Level" id="ID_LEVEL_3" />
-			<element type="Level" id="ID_LEVEL_4" />
 			<element type="Race" id="ID_WOTC_PHB24_RACE_HUMAN" />
 			<element type="Grants" id="ID_INTERNAL_GRANT_RACE_HUMAN" />
 			<element type="Language" id="ID_LANGUAGE_COMMON" />
@@ -368,6 +399,17 @@
 			<element type="Racial Trait" id="ID_WOTC_PHB24_RACIAL_TRAIT_HUMAN_VERSATILE" />
 			<element type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
 			<element type="Size" id="ID_SIZE_MEDIUM" />
+			<element type="Language" id="ID_LANGUAGE_GOBLIN" />
+			<element type="Language" id="ID_LANGUAGE_HALFLING" />
+			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<element type="Feat" id="ID_WOTC_PHB24_FEAT_SAVAGE_ATTACKER" />
+			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<element type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SKILL_EXPERTISE_INSIGHT" />
+			<element type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SKILL_EXPERTISE_PERCEPTION" />
+			<element type="Language" id="ID_LANGUAGE_UNDERCOMMON" />
 			<element type="Background" id="ID_WOTC_PHB24_BACKGROUND_CRIMINAL" />
 			<element type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_DEX_CON_INT" />
 			<element type="Feat" id="ID_WOTC_PHB24_FEAT_ALERT" />
@@ -375,28 +417,26 @@
 			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
 			<element type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
 			<element type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
-			<element type="Feat" id="ID_WOTC_PHB24_FEAT_SAVAGE_ATTACKER" />
+			<element type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_DEX_CON_INT_1" />
+			<element type="Ability Score Improvement" id="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_DEXTERITY_INCREASE_2" />
+			<element type="Ability Score Improvement" id="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CONSTITUTION_INCREASE_1" />
+			<element type="Level" id="ID_LEVEL_2" />
+			<element type="Level" id="ID_LEVEL_3" />
+			<element type="Level" id="ID_LEVEL_4" />
 			<element type="Feat" id="ID_WOTC_PHB24_FEAT_OBSERVANT" />
-			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
-			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
-			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
-			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
-			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
-			<element type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SKILL_EXPERTISE_INSIGHT" />
-			<element type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SKILL_EXPERTISE_PERCEPTION" />
+			<element type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_INTELLIGENCE" />
 			<element type="Feat Feature" id="ID_WOTC_PHB24_FEAT_FEATURE_OBSERVANT_INVESTIGATION" />
 			<element type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_INVESTIGATION" />
 			<element type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_INVESTIGATION_DOUBLE" />
 			<element type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SKILL_EXPERTISE_INVESTIGATION" />
-			<element type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_INTELLIGENCE" />
-			<element type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_DEX_CON_INT_1" />
-			<element type="Ability Score Improvement" id="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_DEXTERITY_INCREASE_2" />
-			<element type="Ability Score Improvement" id="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CONSTITUTION_INCREASE_1" />
-			<element type="Language" id="ID_LANGUAGE_GOBLIN" />
-			<element type="Language" id="ID_LANGUAGE_HALFLING" />
-			<element type="Language" id="ID_LANGUAGE_UNDERCOMMON" />
-			<element type="Armor" id="ID_WOTC_PHB24_ARMOR_LIGHT_LEATHER" />
 			<element type="Weapon" id="ID_WOTC_PHB24_WEAPON_SHORTBOW" />
+			<element type="Armor" id="ID_WOTC_PHB24_ARMOR_LIGHT_LEATHER" />
+			<element type="Level" id="ID_LEVEL_5" />
+			<element type="Grants" id="ID_INTERNAL_MULTICLASS_LEVEL_5" />
+			<element type="Spell" id="ID_WOTC_PHB24_SPELL_GUIDANCE" />
+			<element type="Spell" id="ID_WOTC_PHB24_SPELL_RESISTANCE" />
+			<element type="Spell" id="ID_WOTC_PHB24_SPELL_THAUMATURGY" />
+			<element type="Spell" id="ID_WOTC_PHB24_SPELL_TOLL_THE_DEAD" />
 			<element type="Class" id="ID_WOTC_PHB24_CLASS_ROGUE" />
 			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
 			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_PADDED" />
@@ -433,20 +473,68 @@
 			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_THIEVES_CANT" />
 			<element type="Language" id="ID_WOTC_PHB_LANGUAGE_THIEVES_CANT" />
 			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_WEAPON_MASTERY" />
+			<element type="Grants" id="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE" />
 			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_CUNNING_ACTION" />
 			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_ROGUE_SUBCLASS" />
 			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_STEADY_AIM" />
 			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_ABILITY_SCORE_IMPROVEMENT" />
-			<element type="Grants" id="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE" />
+			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MASTERY_PROPERTY_DAGGER_NICK" />
+			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MASTERY_PROPERTY_SICKLE_NICK" />
 			<element type="Archetype" id="ID_WOTC_PHB24_ARCHETYPE_ROGUE_SOULKNIFE" />
 			<element type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_PSIONIC_POWER" />
 			<element type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_PSYCHIC_BLADES" />
 			<element type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_PSIONIC_POWER_PSI_BOLSTERED_KNACK" />
 			<element type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ROGUE_SOULKNIFE_PSIONIC_POWER_PSYCHIC_WHISPERS" />
-			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MASTERY_PROPERTY_DAGGER_NICK" />
-			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MASTERY_PROPERTY_SICKLE_NICK" />
+			<element type="Multiclass" id="ID_WOTC_PHB24_MULTICLASS_CLERIC" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_PADDED" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LEATHER" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_STUDDED_LEATHER" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HIDE" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_CHAIN_SHIRT" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SCALE_MAIL" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_BREASTPLATE" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HALF_PLATE" />
+			<element type="Proficiency" id="ID_SCAG_PROFICIENCY_ARMOR_PROFICIENCY_SPIKED_ARMOR" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD" />
+			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SPELLCASTING" />
+			<element type="Grants" id="ID_INTERNAL_GRANTS_SPELLCASTING_FEATURE" />
+			<element type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+			<element type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_HOLY_SYMBOL" />
+			<element type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" />
+			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER" />
+			<element type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			<element type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER_THAUMATURGE" />
 		</sum>
-		<magic />
+		<magic multiclass="true" level="1">
+			<spellcasting name="Cleric" ability="Wisdom" attack="5" dc="13" source="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SPELLCASTING">
+				<slots s1="2" s2="0" s3="0" s4="0" s5="0" s6="0" s7="0" s8="0" s9="0" />
+				<cantrips>
+					<spell name="Guidance" level="0" id="ID_WOTC_PHB24_SPELL_GUIDANCE" />
+					<spell name="Resistance" level="0" id="ID_WOTC_PHB24_SPELL_RESISTANCE" />
+					<spell name="Thaumaturgy" level="0" id="ID_WOTC_PHB24_SPELL_THAUMATURGY" />
+					<spell name="Toll the Dead" level="0" id="ID_WOTC_PHB24_SPELL_TOLL_THE_DEAD" />
+				</cantrips>
+				<spells>
+					<spell name="Bane" level="1" id="ID_WOTC_PHB24_SPELL_BANE" prepared="true" />
+					<spell name="Bless" level="1" id="ID_WOTC_PHB24_SPELL_BLESS" prepared="true" />
+					<spell name="Command" level="1" id="ID_WOTC_PHB24_SPELL_COMMAND" prepared="true" />
+					<spell name="Create or Destroy Water" level="1" id="ID_WOTC_PHB24_SPELL_CREATE_OR_DESTROY_WATER" prepared="true" />
+					<spell name="Cure Wounds" level="1" id="ID_WOTC_PHB24_SPELL_CURE_WOUNDS" prepared="true" />
+					<spell name="Detect Evil and Good" level="1" id="ID_WOTC_PHB24_SPELL_DETECT_EVIL_AND_GOOD" prepared="true" />
+					<spell name="Detect Magic" level="1" id="ID_WOTC_PHB24_SPELL_DETECT_MAGIC" prepared="true" />
+					<spell name="Detect Poison and Disease" level="1" id="ID_WOTC_PHB24_SPELL_DETECT_POISON_AND_DISEASE" prepared="true" />
+					<spell name="Guiding Bolt" level="1" id="ID_WOTC_PHB24_SPELL_GUIDING_BOLT" prepared="true" />
+					<spell name="Healing Word" level="1" id="ID_WOTC_PHB24_SPELL_HEALING_WORD" prepared="true" />
+					<spell name="Inflict Wounds" level="1" id="ID_WOTC_PHB24_SPELL_INFLICT_WOUNDS" prepared="true" />
+					<spell name="Protection from Evil and Good" level="1" id="ID_WOTC_PHB24_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" prepared="true" />
+					<spell name="Purify Food and Drink" level="1" id="ID_WOTC_PHB24_SPELL_PURIFY_FOOD_AND_DRINK" prepared="true" />
+					<spell name="Sanctuary" level="1" id="ID_WOTC_PHB24_SPELL_SANCTUARY" prepared="true" />
+					<spell name="Shield of Faith" level="1" id="ID_WOTC_PHB24_SPELL_SHIELD_OF_FAITH" prepared="true" />
+				</spells>
+			</spellcasting>
+		</magic>
 	</build>
 	<!-- restricted sources -->
 	<sources>
